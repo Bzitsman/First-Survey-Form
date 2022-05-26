@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Please fill out the Survey</title>
+    <link rel="stylesheet" href="Build a Survey Form.css">
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Please fill out the Survey</p>
+</head>
+
+    <fieldset>
+<form id="survey-form">
+    <div class="form-control">
+        <label id="name-label">Name:
+        <input id="name" type="text" placeholder="Enter your name"  required /> 
+    </label>
+</div>
+    <div class="form-control">
+    <label id="email-label">Email:
+        <input id="email" type="email" placeholder="Enter your email" required />
+    </label>
+</div>
+    <div class="form-control">
+    <label id="number-label">Age:
+        <input id="number" type="number" placeholder="Age" min="13" max="120" />
+    </label>
+</div>    
+</fieldset>
+<!-- What is the users occupation -->
+<fieldset>
+<div class="form-control">
+    <select id="dropdown">
+        <option>Student</option>
+        <option>Tech Job</option>
+        <option>NonTech Job</option>
+    </select>
+</div>
+</fieldset>
+ <!-- What Operation System is being used -->
+ <fieldset>
+ <div class="form-control">
+     <label>Windows
+    <input type="radio" name="radio-group" value="Windows" />
+     </label>
+     <label>Mac
+    <input type="radio" name="radio-group" value="Mac" />
+</label>
+<label>Linux
+    <input type="radio" name="radio-group" value="Linux" />
+</label>    
+</div>
+</fieldset>
+ <!--Values are going to be Cost Coding Apps Gaming Security -->  
+ <fieldset>
+ <div class="form-control">
+    <input type="checkbox" value="Cost" />
+    <input type="checkbox" value="Coding" />
+    <input type="checkbox" value="Apps" />
+    <input type="checkbox" value="Security" />
+</div>
+ </fieldset>
+ <fieldset>
+<div class="form-control">
+    <textarea name="=bio" rows="3" cols="30" placeholder="Did you buy a new or used computer">
+    </textarea>
+</div>
+</fieldset>
+<div class="form-control">
+    <button id="submit" type="submit">Submit</button>
+</div>
+</form>
+
+</html>
